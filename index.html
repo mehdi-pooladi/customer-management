@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Customer Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Advanced Customer Management</h1>
+
+    <form id="customerForm">
+        <input type="text" id="name" placeholder="Customer Name" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="field" placeholder="Business Field" required>
+        <select id="customerType" required>
+            <option value="">Select Customer Type</option>
+            <option value="Partner">Partner</option>
+            <option value="Corporate">Corporate</option>
+            <option value="Regular Customer">Regular Customer</option>
+        </select>
+        <input type="text" id="registeredBy" placeholder="Registered By" required>
+        <input type="text" id="productPurchased" placeholder="Purchased Product" required>
+        <button type="submit">Register Customer</button>
+    </form>
+
+    <input type="text" id="searchBox" placeholder="🔍 Search by Customer Name">
+
+    <div style="margin-bottom:20px; text-align: center;">
+        <button id="sortByPurchases">🔢 Sort by Number of Purchases</button>
+        <button id="sortByAmount">💰 Sort by Purchase Amount</button>
+    </div>
+
+    <h2>Customer List</h2>
+    <table id="customerTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Business Field</th>
+                <th>Customer Type</th>
+                <th>Registered By</th>
+                <th>Purchased Product</th>
+                <th>Registration Date</th>
+                <th>Number of Purchases</th>
+                <th>Total Purchase (USD)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Customer data will be generated here -->
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
